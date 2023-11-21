@@ -118,12 +118,15 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  #sidebar {
+  #sidebar { 
     position: absolute;
     left: -500px;
     background: #eadee5;
     z-index: 30;
-    transition: 1s;
+    transition: 1s; 
+    height: 200vh !important; 
+    justify-content: start !important;
+    gap: 50px;
   }
   .sm-w-75 {
     width: 75%;
