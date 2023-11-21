@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eadee5;
+}
+
+.text-pink {
+  color: #eb4568;
+}
+
+.btn-pink {
+  background: #eb4568;
+}
+.btn-pink:hover {
+  background: #f54c70;
+}
+
+.btn-bg-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(161, 40, 147, 1) 0%,
+    rgba(234, 70, 105, 1) 100%
+  );
+  position: relative;
+  overflow: hidden !important;
+}
+
+.btn-bg-gradient::before {
+  background: url("/images/btn-bg.png");
+  content: "";
+  display: block;
+  height: 70px;
+  position: absolute;
+  width: 100%;
+  animation: slide 6s infinite linear;
+  opacity: 0.2;
+}
+
+@keyframes slide {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.w-350 {
+  width: 350px;
+}
+
+.img-bg-remove {
+  mix-blend-mode: darken;
+}
+
+.list-style {
+  list-style: none;
+  padding: 0;
+}
+
+.list-style li a {
+  display: block;
+  margin-bottom: 20px;
+  padding: 5px 0 5px 20px;
+  border-left: 6px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.list-style li a:hover {
+  border-left: 6px solid #e23b60;
+  color: #e23b60;
+}
+
+.active-li {
+  border-left: 6px solid #e23b60;
+  color: #e23b60;
+}
+
+.list-style li i {
+  background: #2e1d74;
+  padding: 5px;
+  border-radius: 6px;
+  color: #eae1f0;
+}
+
+.iconBg {
+  background: #e23b60 !important;
+}
+
+.list-style li a:hover i {
+  background: #e23b60;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(161, 40, 147, 1) 0%,
+    rgba(234, 70, 105, 1) 100%
+  ) !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  #sidebar {
+    position: absolute;
+    left: -500px;
+    background: #eadee5;
+    z-index: 30;
+    transition: 1s;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #sidebar {
+    position: absolute;
+    left: -500px;
+    background: #eadee5;
+    z-index: 30;
+    transition: 1s;
+  }
+  .sm-w-75 {
+    width: 75%;
+  }
+  .sm-w-full {
+    width: 100% !important;
+  }
+}
+
+.modal-bg {
+  background: #eadee5;
+}
