@@ -30,7 +30,7 @@ body {
 }
 
 .btn-bg-gradient::before {
-  background: url("/images/btn-bg.png");
+  background: url("../images/btn-bg.png");
   content: "";
   display: block;
   height: 70px;
@@ -113,7 +113,7 @@ body {
     left: -500px;
     background: #eadee5;
     z-index: 30;
-    transition: 1s;
+    transition: 1s; 
   }
 }
 
